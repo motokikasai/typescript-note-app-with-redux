@@ -1,26 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import NewNoteInput from './NewNoteInput';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <h1>Placeholder...</h1>
+      <NewNoteInput />
+      <ul>
+        <li>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque
+          in hic debitis minus autem ipsam voluptatum nam, neque eos. Quasi ut
+          iste sequi deleniti.
+        </li>
+        <li>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque
+          in hic debitis minus autem ipsam voluptatum nam, neque eos. Quasi ut
+          iste sequi deleniti.
+        </li>
+      </ul>
     </div>
   );
-}
+};
 
 export default App;
