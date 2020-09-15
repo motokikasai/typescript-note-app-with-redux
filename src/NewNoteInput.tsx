@@ -19,13 +19,14 @@ const NewNoteInput: React.FC<NewNoteInputProps> = ({ addNote }) => {
   };
 
   return (
-    <div>
+    <>
       <TextField
         onChange={updateNote}
         value={note}
         id='outlined-basic'
         label='Outlined'
         variant='outlined'
+        className='text-field'
       />
       <Button
         onClick={onAddNoteClick}
@@ -35,7 +36,7 @@ const NewNoteInput: React.FC<NewNoteInputProps> = ({ addNote }) => {
       >
         click here!
       </Button>
-    </div>
+    </>
   );
 };
 

@@ -19,8 +19,8 @@ const App = () => {
   return (
     <>
       <GlobalStyles />
-      <Container>
-        <h1>Placeholder...</h1>
+      <Container className='main-wrapper' maxWidth='xs'>
+        <h1>TS / Redux note taker</h1>
         <NewNoteInput addNote={onAddNote} />
         <ul>
           {notes.map(note => (
